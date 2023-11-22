@@ -19,7 +19,7 @@ function Calc() {
         }
     }
 
-    const backspace = () => {
+    const backspace = () => {   
         setResult(result.slice(0, -1))
     }
 
@@ -40,7 +40,7 @@ function Calc() {
                     <button onClick={backspace}>C</button>
                 </div>
                 <div className={classes.keys}>
-                    <button onClick={clear} id={classes.clear} className={classes.non}>CLR</button>
+                    <button onClick ={clear} id={classes.clear} className={classes.non}>CLR</button>
                     <button onClick={percentage} className={classes.non}>%</button>
                     <button onClick={handleResult} className={classes.non}>/</button>
                     <button onClick={handleResult}>7</button>
